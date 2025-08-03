@@ -1,0 +1,65 @@
+{
+  "price_features": [
+    "Open",
+    "High",
+    "Low",
+    "Close",
+    "SMA_5",
+    "SMA_20",
+    "SMA_50",
+    "SMA_200",
+    "EMA_12",
+    "EMA_26",
+    "BB_Upper",
+    "BB_Middle",
+    "BB_Lower",
+    "Close_Lag_1",
+    "Close_Lag_2",
+    "Close_Lag_3",
+    "Close_Rolling_Mean_20"
+  ],
+  "volume_features": [
+    "Volume",
+    "Volume_Lag_1",
+    "Volume_Rolling_Mean_20"
+  ],
+  "ratio_features": [
+    "Daily_Return",
+    "Log_Return",
+    "Intraday_Return",
+    "Overnight_Return",
+    "Return_Lag_1",
+    "Return_Lag_2",
+    "MACD",
+    "MACD_Signal",
+    "MACD_Histogram",
+    "Price_Change_Pct_1D",
+    "Price_vs_SMA20",
+    "Price_vs_SMA50",
+    "Volume_vs_MA",
+    "Price_Momentum_5D",
+    "Volume_Momentum_3D",
+    "BB_Position"
+  ],
+  "bounded_features": [
+    "RSI"
+  ],
+  "normalized_features": [
+    "ATR",
+    "True_Range",
+    "Close_Rolling_Std_20",
+    "Volatility_20D",
+    "Price_Change_1D"
+  ],
+  "time_features": [
+    "DayOfWeek",
+    "Month",
+    "Quarter",
+    "Year"
+  ],
+  "target_columns": [
+    "Target_Close_Next_Day",
+    "Target_Return_Next_Day",
+    "Target_Direction"
+  ]
+}

@@ -1,78 +1,77 @@
 {
-  "model_type": "Ridge Regression (Test)",
-  "best_rmse": 205.07413978206174,
-  "best_r2": 0.7976151222403051,
-  "best_mae": 168.48758260633468,
-  "best_mape": 1.9274030345881834,
-  "training_samples": 573,
-  "test_samples": 142,
-  "features_used": [
-    "Open",
-    "High",
-    "Low",
-    "Close",
-    "SMA_5",
-    "SMA_20",
-    "SMA_50",
-    "SMA_200",
-    "EMA_12",
-    "EMA_26",
-    "BB_Upper",
-    "BB_Middle",
-    "BB_Lower",
-    "Close_Lag_1",
-    "Close_Lag_2",
-    "Close_Lag_3",
-    "Close_Rolling_Mean_20",
-    "Volume",
-    "Volume_Lag_1",
-    "Volume_Rolling_Mean_20",
-    "Daily_Return",
-    "Log_Return",
-    "Intraday_Return",
-    "Overnight_Return",
-    "Return_Lag_1",
-    "Return_Lag_2",
-    "MACD",
-    "MACD_Signal",
-    "MACD_Histogram",
-    "Price_Change_Pct_1D",
-    "Price_vs_SMA20",
-    "Price_vs_SMA50",
-    "Volume_vs_MA",
-    "Price_Momentum_5D",
-    "Volume_Momentum_3D",
-    "BB_Position",
-    "RSI",
-    "ATR",
-    "True_Range",
-    "Close_Rolling_Std_20",
-    "Volatility_20D",
-    "Price_Change_1D",
-    "DayOfWeek",
-    "Month",
-    "Quarter",
-    "Year"
-  ],
-  "top_10_features": [
-    "High",
-    "Low",
-    "Open",
-    "Close",
-    "Close_Lag_1",
-    "Year",
-    "Close_Lag_2",
-    "EMA_12",
-    "EMA_26",
-    "SMA_5"
-  ],
-  "train_date_range": [
-    "2022-08-01 00:00:00",
-    "2024-12-10 00:00:00"
-  ],
-  "test_date_range": [
-    "2024-12-11 00:00:00",
-    "2025-07-29 00:00:00"
-  ],
-  "created_date": "2025-08-04T05:33:17.005207"
+  "model_name": "ridge",
+  "model_type": "advanced",
+  "metrics": {
+    "rmse": 205.07413978205503,
+    "mae": 168.4875826063271,
+    "r2": 0.7976151222403183,
+    "mape": 1.927403034588095
+  },
+  "feature_metadata": {
+    "price_features": [
+      "Open",
+      "High",
+      "Low",
+      "Close",
+      "SMA_5",
+      "SMA_20",
+      "SMA_50",
+      "SMA_200",
+      "EMA_12",
+      "EMA_26",
+      "BB_Upper",
+      "BB_Middle",
+      "BB_Lower",
+      "Close_Lag_1",
+      "Close_Lag_2",
+      "Close_Lag_3",
+      "Close_Rolling_Mean_20"
+    ],
+    "volume_features": [
+      "Volume",
+      "Volume_Lag_1",
+      "Volume_Rolling_Mean_20"
+    ],
+    "ratio_features": [
+      "Daily_Return",
+      "Log_Return",
+      "Intraday_Return",
+      "Overnight_Return",
+      "Return_Lag_1",
+      "Return_Lag_2",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Histogram",
+      "Price_Change_Pct_1D",
+      "Price_vs_SMA20",
+      "Price_vs_SMA50",
+      "Volume_vs_MA",
+      "Price_Momentum_5D",
+      "Volume_Momentum_3D",
+      "BB_Position"
+    ],
+    "bounded_features": [
+      "RSI"
+    ],
+    "normalized_features": [
+      "ATR",
+      "True_Range",
+      "Close_Rolling_Std_20",
+      "Volatility_20D",
+      "Price_Change_1D"
+    ],
+    "time_features": [
+      "DayOfWeek",
+      "Month",
+      "Quarter",
+      "Year"
+    ],
+    "target_columns": [
+      "Target_Close_Next_Day",
+      "Target_Return_Next_Day",
+      "Target_Direction"
+    ]
+  },
+  "training_date": "2025-08-04T06:02:39.631952",
+  "model_path": "models/best_model_ridge.pkl"
 }

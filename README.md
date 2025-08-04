@@ -1,6 +1,6 @@
 # BBCA Stock Forecasting - MLOps Pipeline
 
-A comprehensive machine learning pipeline for forecasting BBCA (Bank Central Asia) stock prices using advanced ML techniques and MLOps best practices.
+A comprehensive machine learning pipeline for forecasting BBCA (Bank Central Asia) stock prices using regression models and MLOps best practices.
 
 ## 📊 Project Overview
 
@@ -309,32 +309,6 @@ models:/bbca_forecasting_model/1
 
 ## 🛠️ Troubleshooting
 
-### Common Issues
-
-1. **Data Not Found**:
-   ```bash
-   # Run EDA notebook first
-   jupyter notebook notebooks/eda_bbca.ipynb
-   ```
-
-2. **MLflow Connection Issues**:
-   ```bash
-   # Start MLflow server
-   mlflow server --host 0.0.0.0 --port 5000
-   ```
-
-3. **Model Registration Fails**:
-   ```bash
-   # Check if training completed successfully
-   python -m src.train
-   ```
-
-4. **Prediction Errors**:
-   ```bash
-   # Use local fallback
-   python -m src.predict --mode single --no_local_fallback
-   ```
-
 ### Debug Commands
 
 ```bash
@@ -400,11 +374,6 @@ python -m src.batch_score --model_uri models:/bbca_forecasting_model@staging
 - **Volume**: Volume vs Moving Average ratios
 - **Price Ratios**: Price vs SMA ratios
 
-### Target Variables
-- **Regression**: `Target_Close_Next_Day` (next day closing price)
-- **Classification**: `Target_Direction` (price direction)
-- **Returns**: `Target_Return_Next_Day` (next day returns)
-
 ### Model Selection
 - **Primary**: Ridge Regression (best performance)
 - **Alternative**: XGBoost, LightGBM
@@ -423,18 +392,3 @@ python -m src.batch_score --model_uri models:/bbca_forecasting_model@staging
 - MLflow for MLOps infrastructure
 - scikit-learn, XGBoost, LightGBM for machine learning algorithms
 - pandas, numpy for data manipulation
-
-## 📊 MLflow Tracking Example
-
-*[Include screenshot of MLflow UI showing experiments, runs, and model registry]*
-
-To view the MLflow tracking interface:
-```bash
-mlflow ui --host 0.0.0.0 --port 5000
-```
-
-Then open [http://localhost:5000](http://localhost:5000) in your browser to see:
-- Experiment tracking with metrics and parameters
-- Model registry with versions and stages
-- Artifact storage for models and results
-- Performance comparisons across runs

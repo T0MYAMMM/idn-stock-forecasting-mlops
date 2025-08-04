@@ -72,6 +72,6 @@
       "Target_Direction"
     ]
   },
-  "training_date": "2025-08-04T06:02:39.631952",
+  "training_date": "2025-08-04T12:20:20.499651",
   "model_path": "models/best_model_ridge.pkl"
 }

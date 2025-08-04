@@ -1,0 +1,10 @@
+artifact_location: file:///home/t0myam/projects/stock-forecast-modelling/idn-stock-forecasting-mlops/mlruns/108445564829141000/models/m-fb4757821acd46919df659cf28043e3c/artifacts
+creation_timestamp: 1754295810449
+experiment_id: '108445564829141000'
+last_updated_timestamp: 1754295812780
+model_id: m-fb4757821acd46919df659cf28043e3c
+model_type: null
+name: model
+source_run_id: 66f4b8a976924992b2eb61d78005e362
+status: 2
+status_message: null

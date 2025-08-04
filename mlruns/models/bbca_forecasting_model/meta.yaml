@@ -1,0 +1,9 @@
+aliases:
+  production: '2'
+  staging: '2'
+creation_timestamp: 1754290901679
+deployment_job_id: null
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1754295725400
+name: bbca_forecasting_model

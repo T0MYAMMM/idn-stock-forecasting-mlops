@@ -1,0 +1,14 @@
+artifact_uri: file:///home/t0myam/projects/stock-forecast-modelling/idn-stock-forecasting-mlops/mlruns/108445564829141000/1eb05d67ab724678bba0b18ee0867a5a/artifacts
+end_time: 1754295685719
+entry_point_name: ''
+experiment_id: '108445564829141000'
+lifecycle_stage: active
+run_id: 1eb05d67ab724678bba0b18ee0867a5a
+run_name: Ridge_alpha_1.0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754295682109
+status: 3
+tags: []
+user_id: t0myam

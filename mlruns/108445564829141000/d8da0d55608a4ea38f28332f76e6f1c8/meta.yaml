@@ -1,0 +1,14 @@
+artifact_uri: file:///home/t0myam/projects/stock-forecast-modelling/idn-stock-forecasting-mlops/mlruns/108445564829141000/d8da0d55608a4ea38f28332f76e6f1c8/artifacts
+end_time: 1754295707684
+entry_point_name: ''
+experiment_id: '108445564829141000'
+lifecycle_stage: active
+run_id: d8da0d55608a4ea38f28332f76e6f1c8
+run_name: XGBoost_n100_d3_lr0.05
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754295704246
+status: 3
+tags: []
+user_id: t0myam

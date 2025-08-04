@@ -1,0 +1,66 @@
+artifact_path: file:///home/t0myam/projects/stock-forecast-modelling/idn-stock-forecasting-mlops/mlruns/108445564829141000/models/m-9a691a31457b4675aab00a0c4209d620/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.5
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.1
+is_signature_from_type_hint: false
+mlflow_version: 3.1.4
+model_id: m-9a691a31457b4675aab00a0c4209d620
+model_size_bytes: 9496
+model_uuid: m-9a691a31457b4675aab00a0c4209d620
+prompts: null
+run_id: 32a065d8b3854e9e8231d0d2d1362fb1
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "Open", "required": true}, {"type": "double",
+    "name": "High", "required": true}, {"type": "double", "name": "Low", "required":
+    true}, {"type": "double", "name": "Close", "required": true}, {"type": "double",
+    "name": "Volume", "required": true}, {"type": "double", "name": "Daily_Return",
+    "required": true}, {"type": "double", "name": "Log_Return", "required": true},
+    {"type": "double", "name": "Intraday_Return", "required": true}, {"type": "double",
+    "name": "Overnight_Return", "required": true}, {"type": "double", "name": "SMA_5",
+    "required": true}, {"type": "double", "name": "SMA_20", "required": true}, {"type":
+    "double", "name": "SMA_50", "required": true}, {"type": "double", "name": "SMA_200",
+    "required": true}, {"type": "double", "name": "EMA_12", "required": true}, {"type":
+    "double", "name": "EMA_26", "required": true}, {"type": "double", "name": "MACD",
+    "required": true}, {"type": "double", "name": "MACD_Signal", "required": true},
+    {"type": "double", "name": "MACD_Histogram", "required": true}, {"type": "double",
+    "name": "RSI", "required": true}, {"type": "double", "name": "BB_Upper", "required":
+    true}, {"type": "double", "name": "BB_Middle", "required": true}, {"type": "double",
+    "name": "BB_Lower", "required": true}, {"type": "double", "name": "BB_Position",
+    "required": true}, {"type": "double", "name": "ATR", "required": true}, {"type":
+    "double", "name": "True_Range", "required": true}, {"type": "double", "name":
+    "Close_Lag_1", "required": true}, {"type": "double", "name": "Close_Lag_2", "required":
+    true}, {"type": "double", "name": "Close_Lag_3", "required": true}, {"type": "double",
+    "name": "Volume_Lag_1", "required": true}, {"type": "double", "name": "Return_Lag_1",
+    "required": true}, {"type": "double", "name": "Return_Lag_2", "required": true},
+    {"type": "double", "name": "Close_Rolling_Mean_20", "required": true}, {"type":
+    "double", "name": "Close_Rolling_Std_20", "required": true}, {"type": "double",
+    "name": "Volume_Rolling_Mean_20", "required": true}, {"type": "double", "name":
+    "Volatility_20D", "required": true}, {"type": "double", "name": "Price_Change_1D",
+    "required": true}, {"type": "double", "name": "Price_Change_Pct_1D", "required":
+    true}, {"type": "double", "name": "Price_vs_SMA20", "required": true}, {"type":
+    "double", "name": "Price_vs_SMA50", "required": true}, {"type": "double", "name":
+    "Volume_vs_MA", "required": true}, {"type": "double", "name": "Price_Momentum_5D",
+    "required": true}, {"type": "double", "name": "Volume_Momentum_3D", "required":
+    true}, {"type": "long", "name": "DayOfWeek", "required": true}, {"type": "long",
+    "name": "Month", "required": true}, {"type": "long", "name": "Quarter", "required":
+    true}, {"type": "long", "name": "Year", "required": true}]'
+  outputs: '[{"type": "double", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-08-04 08:33:53.426530'
